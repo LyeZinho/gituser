@@ -22,43 +22,43 @@ import BasicInfo from '../profile/basicinfo'
 import React, { useState, useEffect } from 'react';
 
 
+
 export default function MainContent(){
     const [username, setUsername] = useState('');    
     const [user, setUser] = useState(null);
 
     const handleChange = (e) => {
-        setUsername(e.target.value);
+        setUser(e.target.value);
     }
+
     return(
         <Box >
             <Flex direction="row">
                 <Stack direction={'column'} spacing={10} p={2}>
                     <Box w={'sm'} h={'sm'}>
-                        <ProfilePicture username={user} />
+                        <ProfilePicture username={username}/>
                     </Box>
                     <Box w={'sm'} h={'sm'}>
-                        <FormControl isRequired>
-                            <Input 
-                            id='first-name' 
-                            placeholder='First name' 
-                            onChange={handleChange}
-                            onClick={() => {
-                                setUser(username);
-                            }}
-                            color={'#181818'}
-                            />
-                            <Button 
-                            >Search</Button>
-                        </FormControl>
+                        <Input 
+                        id='first-name' 
+                        placeholder='First name' 
+                        onChange={handleChange}
+                        color={'#181818'}
+                        />
+                        <Button 
+                        onClick={() => {
+                            setUsername(user)
+                        }}
+                        >Search</Button>
                     </Box>
                 </Stack>
             <Spacer />
                 <Stack spacing={1} direction={'row'} p={2}> 
                     <Box>
-                        <BasicInfo username={user} />
+                        <BasicInfo username={username}/>
                     </Box>
                     <Box>
-                        <BasicInfo username={user} />
+                        <BasicInfo username={username}/>
                     </Box>
                 </Stack>
             </Flex>
