@@ -107,7 +107,7 @@ export default function BasicInfo(props){
                             </Box>   
                             <Box maxH={400}>
                                 <Text  as={'span'} color={'white'} fontSize={'2xl'}>
-                                    "{user.bio ? user.bio : "Não possui bio"}"
+                                &quot;{user.bio ? user.bio : "Não possui bio"}&quot;
                                 </Text>
                             </Box>
                         </Stack>
