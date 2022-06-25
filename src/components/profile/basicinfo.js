@@ -120,7 +120,7 @@ export default function BasicInfo(props){
                                 <VscTwitter size={'30px'} p={3}/> 
                             </Box>   
                             <Box maxH={400}>
-                                <Link href={user.twitter_username ? `https://twitter.com/${user.twitter_username}` : ""}>
+                                <Link href={user.twitter_username ? `https://twitter.com/${user.twitter_username}` : "https://twitter.com"}>
                                     <Text  as={'span'} color={'white'} fontSize={'2xl'} _hover={user.twitter_username ? color="#1CAE8E" : color="white"}>
                                         {user.twitter_username ? `@${user.twitter_username}` : 'No twitter username'}
                                     </Text>
