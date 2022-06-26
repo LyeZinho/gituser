@@ -58,7 +58,7 @@ export default function RepoList(props) {
                         <Box rounded={'full'} bgColor={'white'} p={1}>
                             <GoRepo size={'15px'} p={3} color={'#202828'}/> 
                         </Box>   
-                        <Link href={props.htmlUrl}>
+                        <Link href={props.htmlUrl} target='_blank'>
                             <Text color={'white'} _hover={{color: '#1CAE8E'}}>
                                 {props.fullName}
                             </Text>
