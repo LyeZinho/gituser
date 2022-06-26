@@ -41,7 +41,27 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoPerson size={'30px'} p={3}/> 
+                                <GoMarkGithub size={'30px'} p={3}/> 
+                            </Box> 
+                            <Skeleton w={400} h={10}>
+                            </Skeleton>
+                        </Stack>
+                    </Box>
+
+                    <Box pb={'auto'} pt={'auto'} p={1}>
+                        <Stack direction={'row'} p={2}> 
+                            <Box rounded={'full'} bgColor={'white'} p={1}>
+                                <GoQuote size={'30px'} p={3}/> 
+                            </Box> 
+                            <Skeleton w={400} h={10}>
+                            </Skeleton>
+                        </Stack>
+                    </Box>
+
+                    <Box pb={'auto'} pt={'auto'} p={1}>
+                        <Stack direction={'row'} p={2}> 
+                            <Box rounded={'full'} bgColor={'white'} p={1}>
+                                <VscTwitter size={'30px'} p={3}/> 
                             </Box> 
                             <Skeleton w={400} h={10}>
                             </Skeleton>
@@ -101,7 +121,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <VscTwitter size={'30px'} p={3}/> 
+                                <VscTwitter size={'30px'} p={3} color={'#202828'}/> 
                             </Box>   
                             <Box maxH={400}>
                                 <Link href={props.twitter ? `https://twitter.com/${props.twitter}` : ""}>

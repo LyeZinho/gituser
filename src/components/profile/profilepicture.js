@@ -9,8 +9,7 @@ import React, { useState, useEffect } from 'react';
 
 
 export default function ProfilePicture(props) {
-
-    if (!props.avatar_url || props.avatar_url === '' || !props.login) {
+    if (props.avatarUrl == "" || props.avatarUrl == undefined) {
         return (
             <Box>
                 <AspectRatio ratio={1}>
@@ -27,7 +26,8 @@ export default function ProfilePicture(props) {
             rounded={'full'}
             size={'auto'}
             boxShadow={ '0px 0px 50px #000000' }
-            />
+            />    
         </AspectRatio>
     )
+    
 }
