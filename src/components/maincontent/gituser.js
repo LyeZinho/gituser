@@ -55,6 +55,7 @@ export default function GitUser(props) {
                             _hover={{ bgColor: '#ffffff', color: '#202828' }}
                             leftIcon={<GoMarkGithub size={'23px'} p={3} color={'#03FBCB'} 
                             _hover={{ color: '#202828' }}/>}
+                            onClick={() => window.open("https://github.com/LyeZinho/gituser", '_blank')}
                             >
                                 GitUser repo
                             </Button>
