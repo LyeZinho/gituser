@@ -31,7 +31,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoPerson size={'30px'} p={3}/> 
+                                <GoPerson size={'30px'} p={3} color={'#202828'}/> 
                             </Box>   
                             <Skeleton w={400} h={10}>
                             </Skeleton>
@@ -41,7 +41,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoMarkGithub size={'30px'} p={3}/> 
+                                <GoMarkGithub size={'30px'} p={3} color={'#202828'}/> 
                             </Box> 
                             <Skeleton w={400} h={10}>
                             </Skeleton>
@@ -51,7 +51,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoQuote size={'30px'} p={3}/> 
+                                <GoQuote size={'30px'} p={3} color={'#202828'}/> 
                             </Box> 
                             <Skeleton w={400} h={10}>
                             </Skeleton>
@@ -61,7 +61,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <VscTwitter size={'30px'} p={3}/> 
+                                <VscTwitter size={'30px'} p={3} color={'#202828'}/> 
                             </Box> 
                             <Skeleton w={400} h={10}>
                             </Skeleton>
@@ -79,7 +79,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoPerson size={'30px'} p={3}/> 
+                                <GoPerson size={'30px'} p={3} color={'#202828'}/> 
                             </Box>   
                             <Box maxH={400}>
                                 <Text  as={'span'} color={'white'} fontSize={'2xl'}>
@@ -93,7 +93,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoMarkGithub size={'30px'} p={3}/> 
+                                <GoMarkGithub size={'30px'} p={3} color={'#202828'}/> 
                             </Box>   
                             <Box maxH={400}>
                                 <Text  as={'span'} color={'white'} fontSize={'2xl'}>
@@ -107,7 +107,7 @@ export default function BasicInfo(props){
                     <Box pb={'auto'} pt={'auto'} p={1}>
                         <Stack direction={'row'} p={2}> 
                             <Box rounded={'full'} bgColor={'white'} p={1}>
-                                <GoQuote size={'30px'} p={3}/> 
+                                <GoQuote size={'30px'} p={3} color={'#202828'}/> 
                             </Box>   
                             <Box maxH={400}>
                                 <Text  as={'span'} color={'white'} fontSize={'2xl'}>
@@ -124,7 +124,7 @@ export default function BasicInfo(props){
                                 <VscTwitter size={'30px'} p={3} color={'#202828'}/> 
                             </Box>   
                             <Box maxH={400}>
-                                <Link href={props.twitter ? `https://twitter.com/${props.twitter}` : ""}>
+                                <Link href={props.twitter ? `https://twitter.com/${props.twitter}` : ""} target='_blank'>
                                     <Text  as={'span'} color={'white'} fontSize={'2xl'} _hover={props.twitter ? {color:"#1CAE8E"} : {color:"white"}}>
                                         {props.twitter ? `@${props.twitter}` : 'No twitter username'}
                                     </Text>
