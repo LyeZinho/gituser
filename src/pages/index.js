@@ -27,7 +27,7 @@ export default function Home() {
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Head>
         <title>GitUser</title>
-        <meta name="description" content="🔍Git user Look up🔎" />
+        <meta name="description" content="🔍Git user Look up." />
         <link rel="icon" href="icons/favicon.ico" />
       </Head>
 
