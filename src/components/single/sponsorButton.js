@@ -45,7 +45,7 @@ export default function SponsorModal() {
         <ModalOverlay />
           <ModalContent bgColor={'#202828'}>
             <ModalHeader color={'white'}>Support me 😀</ModalHeader>
-            <ModalCloseButton />
+            <ModalCloseButton color={'white'} />
               <ModalBody padding={0}>
                 <Skeleton
                   isLoaded={isLoaded}
