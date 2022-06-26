@@ -87,11 +87,13 @@ export default function MainContent(){
                         onChange={handleChange}
                         color={'#181818'}
                         />
-                        <Button 
-                        onClick={() => {
-                            handleSubmit()
-                        }}
-                        >Search</Button>
+                        <Center pt={10}>
+                            <Button 
+                            onClick={() => {
+                                handleSubmit()
+                            }}
+                            >Search</Button>
+                        </Center>
                     </Box>
                 </Stack>
             <Spacer />
